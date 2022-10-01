@@ -9,13 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Explore SwiftUI!")
-            .foregroundColor(.mint)
-            .font(.largeTitle)
-            .italic()
-            .bold()
-            .underline()
-            .padding()
+        VStack(alignment: .leading, spacing: 8, content: {
+            Text("Turtle Rock")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(.mint)
+                .italic()
+                .bold()
+                .underline()
+            HStack {
+                Text("Joshua Tree National Park")
+                    .font(.subheadline)
+                .foregroundColor(.green)
+                Spacer()
+                Text("California")
+                    .font(.subheadline)
+                    .foregroundColor(.blue)
+            }
+        })
+        .padding()
     }
 }
 
