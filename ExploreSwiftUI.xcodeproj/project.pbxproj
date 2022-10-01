@@ -13,6 +13,8 @@
 		6F5FBE8628E8D5A1002811BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5FBE7428E8D59F002811BD /* ContentView.swift */; };
 		6F5FBE8728E8D5A1002811BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F5FBE7528E8D5A0002811BD /* Assets.xcassets */; };
 		6F5FBE8828E8D5A1002811BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F5FBE7528E8D5A0002811BD /* Assets.xcassets */; };
+		6F5FBE9228E8E798002811BD /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5FBE9128E8E798002811BD /* CircleImage.swift */; };
+		6F5FBE9328E8E798002811BD /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5FBE9128E8E798002811BD /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,7 @@
 		6F5FBE7A28E8D5A1002811BD /* ExploreSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExploreSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F5FBE8028E8D5A1002811BD /* ExploreSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExploreSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F5FBE8228E8D5A1002811BD /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		6F5FBE9128E8E798002811BD /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			children = (
 				6F5FBE7328E8D59F002811BD /* ExploreSwiftUIApp.swift */,
 				6F5FBE7428E8D59F002811BD /* ContentView.swift */,
+				6F5FBE9128E8E798002811BD /* CircleImage.swift */,
 				6F5FBE7528E8D5A0002811BD /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -178,6 +182,7 @@
 			files = (
 				6F5FBE8528E8D5A1002811BD /* ContentView.swift in Sources */,
 				6F5FBE8328E8D5A1002811BD /* ExploreSwiftUIApp.swift in Sources */,
+				6F5FBE9228E8E798002811BD /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +192,7 @@
 			files = (
 				6F5FBE8628E8D5A1002811BD /* ContentView.swift in Sources */,
 				6F5FBE8428E8D5A1002811BD /* ExploreSwiftUIApp.swift in Sources */,
+				6F5FBE9328E8E798002811BD /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
