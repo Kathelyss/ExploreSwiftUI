@@ -9,7 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        Text("Explore SwiftUI!")
+            .foregroundColor(.mint)
+            .font(.largeTitle)
+            .italic()
+            .bold()
+            .underline()
             .padding()
     }
 }
