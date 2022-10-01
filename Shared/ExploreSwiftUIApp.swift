@@ -2,7 +2,7 @@
 //  ExploreSwiftUIApp.swift
 //  Shared
 //
-//  Created by Katik on 01.10.2022.
+//  Created by Kathelyss on 01.10.2022.
 //
 
 import SwiftUI
