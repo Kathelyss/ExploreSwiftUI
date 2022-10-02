@@ -14,7 +14,6 @@ struct Landmark: Hashable, Codable {
     let name: String
     let park: String
     let state: String
-    let category: String
     let description: String
     
     private var imageName: String
@@ -24,12 +23,12 @@ struct Landmark: Hashable, Codable {
     
     private var coordinates: Coordinates
     var locationCoordinate: CLLocationCoordinate2D {
-        .init(latitude: coordinates.lattitude,
+        .init(latitude: coordinates.latitude,
               longitude: coordinates.longitude)
     }
     
     struct Coordinates: Hashable, Codable {
-        let lattitude: Double
+        let latitude: Double
         let longitude: Double
     }
 }
