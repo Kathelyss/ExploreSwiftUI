@@ -15,14 +15,14 @@ struct Landmark: Hashable, Codable, Identifiable {
     let park: String
     let state: String
     let description: String
-    let isFavorite: Bool
+    var isFavorite: Bool
     
-    private var imageName: String
+    private let imageName: String
     var image: Image {
         .init(imageName)
     }
     
-    private var coordinates: Coordinates
+    private let coordinates: Coordinates
     var locationCoordinate: CLLocationCoordinate2D {
         .init(latitude: coordinates.latitude,
               longitude: coordinates.longitude)
