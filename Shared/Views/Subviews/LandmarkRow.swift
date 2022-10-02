@@ -14,16 +14,24 @@ struct LandmarkRow: View {
         HStack {
             landmark.image
                 .resizable()
+                .clipShape(Circle())
                 .frame(width: 50, height: 50)
             
             Text(landmark.name)
             
             Spacer()
+            
+            if landmark.isFavorite {
+                Image(systemName: "heart.fill")
+                    .foregroundColor(.mint)
+            }
         }
     }
 }
 
 struct LandmarkRow_Previews: PreviewProvider {
+    static var landmarks = ModelData().landmarks
+    
     static var previews: some View {
         Group {
             LandmarkRow(landmark: landmarks[0])
