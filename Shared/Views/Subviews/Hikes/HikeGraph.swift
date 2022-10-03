@@ -7,6 +7,14 @@
 
 import SwiftUI
 
+extension Animation {
+    static func ripple(index: Int) -> Animation {
+        Animation.spring(dampingFraction: 0.5)
+            .speed(0.7)
+            .delay(0.03 * Double(index))
+    }
+}
+
 struct HikeGraph: View {
     var hike: Hike
     var path: KeyPath<Hike.Observation, Range<Double>>
@@ -37,8 +45,8 @@ struct HikeGraph: View {
                                  color: color,
                                  height: proxy.size.height,
                                  range: observation[keyPath: path],
-                                 overallRange: overallRange
-                    )
+                                 overallRange: overallRange)
+                    .animation(.ripple(index: index))
                 }
                 .offset(x: 0, y: proxy.size.height * heightRatio)
             }
