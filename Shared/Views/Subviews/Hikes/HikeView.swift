@@ -34,6 +34,7 @@ struct HikeView: View {
                         .imageScale(.large)
                         .foregroundColor(.green)
                         .rotationEffect(.degrees(showDetail ? 90 : 0))
+                        .scaleEffect(showDetail ? 1.5 : 1)
                         .padding()
                 }
             }
